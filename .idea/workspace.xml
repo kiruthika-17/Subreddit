@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5271e60-c679-42df-9478-5f5ceb907a2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -252,8 +251,16 @@
       <workItem from="1580213121039" duration="1237000" />
       <workItem from="1580214413340" duration="1018000" />
       <workItem from="1580278267285" duration="569000" />
-      <workItem from="1580278934759" duration="432000" />
+      <workItem from="1580278934759" duration="1206000" />
     </task>
+    <task id="LOCAL-00001" summary="committing in lb1">
+      <created>1580279426911</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580279426911</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +268,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="committing in lb1" />
+    <option name="LAST_COMMIT_MESSAGE" value="committing in lb1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Assign_Data_Sources" timestamp="1580104018213">
@@ -291,10 +300,11 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580202490243" />
-    <state x="318" y="23" key="CommitChangelistDialog2" timestamp="1580236503724">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state x="254" y="23" key="CommitChangelistDialog2" timestamp="1580279426567">
+      <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="371" y="127" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1580129633952" />
+    <state x="254" y="23" key="CommitChangelistDialog2/0.23.1280.727@0.23.1280.727" timestamp="1580279426567" />
     <state x="318" y="23" key="CommitChangelistDialog2/0.23.1440.811@0.23.1440.811" timestamp="1580236503724" />
     <state width="1350" height="207" key="GridCell.Tab.0.bottom" timestamp="1580236503753">
       <screen x="0" y="23" width="1440" height="811" />
@@ -417,6 +427,11 @@
     </state>
     <state x="141" y="23" width="997" height="722" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1580214998750" />
     <state x="141" y="23" width="997" height="709" key="SettingsEditor/0.23.1280.709@0.23.1280.709" timestamp="1580212534297" />
+    <state x="240" y="124" key="Vcs.Push.Dialog.v2" timestamp="1580279586628">
+      <screen x="0" y="23" width="1280" height="726" />
+    </state>
+    <state x="240" y="124" key="Vcs.Push.Dialog.v2/0.23.1280.726@0.23.1280.726" timestamp="1580279586628" />
+    <state x="240" y="124" key="Vcs.Push.Dialog.v2/0.23.1280.727@0.23.1280.727" timestamp="1580279451261" />
     <state x="317" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1580278958695">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
@@ -437,10 +452,11 @@
     </state>
     <state x="386" y="97" key="git4idea.branch.GitSmartOperationDialog/0.23.1280.710@0.23.1280.710" timestamp="1580210195813" />
     <state x="386" y="99" key="git4idea.branch.GitSmartOperationDialog/0.23.1280.726@0.23.1280.726" timestamp="1580278356111" />
-    <state x="528" y="323" key="git4idea.merge.GitMergeDialog" timestamp="1580127032398">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="402" y="246" key="git4idea.merge.GitMergeDialog" timestamp="1580280135052">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state x="528" y="323" key="git4idea.merge.GitMergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580127032398" />
+    <state x="402" y="246" key="git4idea.merge.GitMergeDialog/0.23.1280.726@0.23.1280.726" timestamp="1580280135052" />
     <state x="466" y="282" key="git4idea.ui.GitUnstashDialog" timestamp="1580236408361">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
