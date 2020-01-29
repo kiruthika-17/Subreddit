@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5271e60-c679-42df-9478-5f5ceb907a2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -252,7 +251,8 @@
       <workItem from="1580103517103" duration="28446000" />
       <workItem from="1580213121039" duration="1237000" />
       <workItem from="1580214413340" duration="1018000" />
-      <workItem from="1580278267285" duration="382000" />
+      <workItem from="1580278267285" duration="569000" />
+      <workItem from="1580278934759" duration="432000" />
     </task>
     <servers />
   </component>
@@ -417,10 +417,11 @@
     </state>
     <state x="141" y="23" width="997" height="722" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1580214998750" />
     <state x="141" y="23" width="997" height="709" key="SettingsEditor/0.23.1280.709@0.23.1280.709" timestamp="1580212534297" />
-    <state x="317" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1580214414209">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="317" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1580278958695">
+      <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1580214414209" />
+    <state x="317" y="234" key="com.intellij.ide.util.TipDialog/0.23.1280.727@0.23.1280.727" timestamp="1580278958695" />
     <state x="446" y="339" width="1480" height="850" key="dock-window-1" timestamp="1580124996833">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
