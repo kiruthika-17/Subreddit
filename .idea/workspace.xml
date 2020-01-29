@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a5271e60-c679-42df-9478-5f5ceb907a2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onedirect/reddit/service/SubredditService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onedirect/reddit/service/SubredditService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +244,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -458,10 +456,10 @@
     </state>
     <state x="141" y="23" width="997" height="722" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1580214998750" />
     <state x="141" y="23" width="997" height="709" key="SettingsEditor/0.23.1280.709@0.23.1280.709" timestamp="1580212534297" />
-    <state x="240" y="124" key="Vcs.Push.Dialog.v2" timestamp="1580281095450">
+    <state x="240" y="124" key="Vcs.Push.Dialog.v2" timestamp="1580281993168">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state x="240" y="124" key="Vcs.Push.Dialog.v2/0.23.1280.726@0.23.1280.726" timestamp="1580281095450" />
+    <state x="240" y="124" key="Vcs.Push.Dialog.v2/0.23.1280.726@0.23.1280.726" timestamp="1580281993168" />
     <state x="240" y="124" key="Vcs.Push.Dialog.v2/0.23.1280.727@0.23.1280.727" timestamp="1580279451261" />
     <state x="317" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1580278958695">
       <screen x="0" y="23" width="1280" height="727" />
@@ -483,11 +481,11 @@
     </state>
     <state x="386" y="97" key="git4idea.branch.GitSmartOperationDialog/0.23.1280.710@0.23.1280.710" timestamp="1580210195813" />
     <state x="386" y="99" key="git4idea.branch.GitSmartOperationDialog/0.23.1280.726@0.23.1280.726" timestamp="1580278356111" />
-    <state x="402" y="246" key="git4idea.merge.GitMergeDialog" timestamp="1580280135052">
+    <state x="402" y="246" key="git4idea.merge.GitMergeDialog" timestamp="1580281911082">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state x="528" y="323" key="git4idea.merge.GitMergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580127032398" />
-    <state x="402" y="246" key="git4idea.merge.GitMergeDialog/0.23.1280.726@0.23.1280.726" timestamp="1580280135052" />
+    <state x="402" y="246" key="git4idea.merge.GitMergeDialog/0.23.1280.726@0.23.1280.726" timestamp="1580281911082" />
     <state x="289" y="182" key="git4idea.merge.GitPullDialog" timestamp="1580280282334">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
