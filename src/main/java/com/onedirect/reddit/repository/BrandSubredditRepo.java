@@ -9,6 +9,6 @@ import java.util.Optional;
 
 public interface BrandSubredditRepo extends CrudRepository<SubredditModel,Integer> {
 
-   // @Query("select p from SubredditModel p where p.subreddits = ?")
-   // Optional<SubredditModel> findByDisplay_name(String uriName);
+  //  @Query("select p from SubredditModel p where p.subreddits = ?")
+  //  SubredditModel findByDisplay_name(String uriName);
 }

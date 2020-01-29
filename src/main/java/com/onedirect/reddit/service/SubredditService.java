@@ -32,8 +32,6 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-
-
 @Service
 public class SubredditService implements SubredditServiceInterface{
 
@@ -43,8 +41,7 @@ public class SubredditService implements SubredditServiceInterface{
      @Autowired
      private BrandSubredditRepo brandrepo;
 
-
-    @Value("${access_token}")
+     @Value("${access_token}")
     private String access_token;
 
     public ResponseEntity<String> saveSubreddit(SubredditNameDTO names)  throws JSONException, IOException, DataNotFoundException {
@@ -55,74 +52,26 @@ public class SubredditService implements SubredditServiceInterface{
         headers.set("user-agent", "aaa");
         headers.set("authorization", "bearer" + access_token);
         HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
+        
 
-
-      /* final String SubredditUri="https://oauth.reddit.com/subreddits.json";
-        ResponseEntity<String> Subredditresponse
-                = restTemplate.exchange(SubredditUri,HttpMethod.GET,entity,String.class);
-
-         if(Objects.nonNull(Subredditresponse)){
-
-            JSONObject Subredditresult = new JSONObject(Subredditresponse.getBody());
-
-            if(Objects.nonNull(Subredditresult)) {
-
-                JSONObject Subredditdata = (JSONObject) Subredditresult.get("data");
-
-                if (Objects.nonNull(Subredditdata)) {
-
-                    JSONArray Subredditchildren = Subredditdata.getJSONArray("children");
-                    int length = Subredditchildren.length();
-
-                    String Subredditoutput;
-
-                    List<BrandSubreddits> brandSubreddits=new ArrayList<>();
-
-                    ObjectMapper objectMapper = new ObjectMapper();
-
-                    for (int SubredditCount = 0; SubredditCount < length; SubredditCount++) {
-                        JSONObject Subredditno = Subredditchildren.getJSONObject(SubredditCount);
-                        JSONObject SpecificSubreddit = (JSONObject) Subredditno.get("data");
-                        Subredditoutput = SpecificSubreddit.toString();
-
-                        BrandSubreddits bb=objectMapper.readValue(Subredditoutput,BrandSubreddits.class);
-                        brandSubreddits.add(bb);
-
-
-                    }
-
-
-
-                    for (BrandSubreddits sd : brandSubreddits) {
-                        SubredditModel sm = new SubredditModel();
-                        BeanUtils.copyProperties(sd, sm);
-                      //  System.out.println(sm.getDisplay_name());
-                        brandrepo.save(sm);
-
-
-                    }
-
-                }}}
-
-*/
-
-                    String uriName;
+        String uriName;
         String name = names.getNames();
         String[] arrSplit = name.split(",");
-        for (int i = 0; i < arrSplit.length; i++) {
-            System.out.println(arrSplit[i]);
-            uriName = arrSplit[i];
-
-          //  Optional<SubredditModel> mm = brandrepo.findByDisplay_name(uriName);
-          //  if (mm.isPresent()) {
+        for (int nameLength = 0; nameLength< arrSplit.length; nameLength++) {
+            System.out.println(arrSplit[nameLength]);
+            uriName = arrSplit[nameLength];
 
                 final String uri = "https://oauth.reddit.com/r/" + uriName + ".json";
                 System.out.println(uri);
 
 
-                ResponseEntity<String> response
-                        = restTemplate.exchange(uri, HttpMethod.GET, entity, String.class);
-
+                ResponseEntity<String> response = null;
+                try {
+                    response = restTemplate.exchange(uri, HttpMethod.GET, entity, String.class);
+                }
+                catch(Exception e){
+                    throw new DataNotFoundException("There exists no post under this Subreddit:"+ uriName);
+                }
                 if (Objects.nonNull(response)) {
                     JSONObject result = new JSONObject(response.getBody());
 
@@ -157,14 +106,14 @@ public class SubredditService implements SubredditServiceInterface{
                             }
 
                         } else {
-                            throw new DataNotFoundException("There exists no post under this Subreddit");
+                            throw new DataNotFoundException("There exists no post under this Subreddit: "+uriName);
                         }
 
                     } else {
-                        throw new DataNotFoundException("There exists no post under this Subreddit");
+                        throw new DataNotFoundException("There exists no post under this Subreddit: "+uriName);
                     }
                 } else {
-                    throw new DataNotFoundException("There exists no post under this Subreddit");
+                    throw new DataNotFoundException("There exists no post under this Subreddit: "+uriName);
                 }
             }
 
