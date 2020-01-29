@@ -14,6 +14,7 @@ import com.onedirect.reddit.repository.SubredditRepo;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -62,12 +63,12 @@ public class SubredditService implements SubredditServiceInterface{
             uriName = arrSplit[nameLength];
 
                 final String uri = "https://oauth.reddit.com/r/" + uriName + ".json";
-                System.out.println(uri);
-
+              final org.slf4j.Logger logger = LoggerFactory.getLogger(SubredditService.class);
 
                 ResponseEntity<String> response = null;
                 try {
                     response = restTemplate.exchange(uri, HttpMethod.GET, entity, String.class);
+                    logger.info("Hitting the API :"+uriName);
                 }
                 catch(Exception e){
                     throw new DataNotFoundException("There exists no post under this Subreddit:"+ uriName);
